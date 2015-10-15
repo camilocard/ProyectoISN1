@@ -63,12 +63,11 @@ CREATE TABLE Planes (
 
 CREATE SEQUENCE Reservas_Id_reserva_seq INCREMENT 1 START 1;
 CREATE SEQUENCE Reservas_Num_reserva_seq INCREMENT 1 START 1;
-CREATE SEQUENCE Reservas_Cliente_que_reserva_seq INCREMENT 1 START 1;
 
 CREATE TABLE Reservas ( 
 	Id_reserva integer DEFAULT nextval(('Reservas_Id_reserva_seq'::text)::regclass) NOT NULL,
 	Num_reserva integer DEFAULT nextval(('Reservas_Num_reserva_seq'::text)::regclass),
-	Cliente_que_reserva integer DEFAULT nextval(('Reservas_Cliente_que_reserva_seq'::text)::regclass),
+	Cliente_que_reserva integer,
 	plan_escogido integer,
 	fecha_salida varchar(50),
 	fecha_regreso varchar(50),

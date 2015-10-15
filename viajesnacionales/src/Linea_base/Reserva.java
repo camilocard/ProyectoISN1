@@ -165,8 +165,8 @@ public class Reserva {
 		 */
 		public void CrudInsertar(int intNum_Reserva, int intPlan_escogido, String srtFecha_salida, String strFecha_regreso, int intCliente_que_reserva, int intEmpledo){
 
-			String query = " insert into Planes (nombre_plan, costo_plan)"
-			+ " values "+"('"+strNombre+"','"+intCosto+"')";
+			String query = " insert into Reservas (Num_reserva, Cliente_que_reserva, plan_escogido, fecha_salida, fecha_regreso, Empleado)"
+			+ " values "+"('"+intNum_Reserva+"','"+intCliente_que_reserva+"','"+intPlan_escogido+"','"+strFecha_salida+"','"+strFecha_regreso+"','"+intEmpledo+"')";
 
 			conex.queryUpdate(query);
 		}
@@ -183,7 +183,7 @@ public class Reserva {
 		 */
 		public void CrudActualizar(int intId_reserva, int intNum_Reserva, int intPlan_escogido, String srtFecha_salida, String strFecha_regreso, int intCliente_que_reserva, int intEmpledo){
 
-			String query = " UPDATE Aerolineas SET Id_aerolinea='"+ IntId_Aerolinea +"', Nombre_aerolinea='"+ strNombre_aerolinea +"'";
+			String query = " UPDATE Reservas SET Id_reserva='"+ intId_reserva +"', Num_reserva='"+ intNum_Reserva +"',	Cliente_que_reserva='"+ intCliente_que_reserva +"',	plan_escogido='"+ intPlan_escogido +"', fecha_salida='"+ strFecha_salida +"', fecha_regreso='"+ strFecha_regreso +"',	Empleado='"+ intEmpledo +"'";
 
 			conex.queryUpdate(query);
 		}

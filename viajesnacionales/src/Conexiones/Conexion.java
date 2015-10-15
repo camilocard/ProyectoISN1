@@ -7,7 +7,7 @@ import java.sql.*;
  * INGENIERÍA DE SISTEMAS
  * Materias:
  * SISTEMAS DE INFORMACIÓN
- * INGENIERÍA DE SOFTWARE II
+ * INGENIERÍA DE SOFTWARE I
  * Profesor:   Jorge Paramo Fonseca
  * @author JuanJo
  * @version 1.0
@@ -57,6 +57,8 @@ public class Conexion
             {   
                 Class.forName(classforname);
                 error = "Creo la Conexion";
+
+
 				// hay que escribir el usuario y la clave del servidor de BD que se use
                 conexion = DriverManager.getConnection(url, strUsuario, strClave);
                 //System.out.print("Ya estan todos los parametros\n");

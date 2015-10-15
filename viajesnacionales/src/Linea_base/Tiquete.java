@@ -111,8 +111,8 @@ public class Tiquete {
 		 */
 		public void Crudinsertar(int intAerolinea, int intReservado, int intItinerario, double doubleValor){
 
-			String query = " insert into Planes (nombre_plan, costo_plan)"
-			+ " values "+"('"+strNombre+"','"+intCosto+"')";
+			String query = " insert into Planes (Id_Tiquete, Aerolinea, Reservado, Itinerario, Valor)"
+			+ " values "+"('"+intAerolinea+"','"+intReservado+"','"+intItinerario+"','"+doubleValor+"')";
 
 			conex.queryUpdate(query);
 
@@ -141,7 +141,7 @@ public class Tiquete {
 		 */
 		public void CrudActualizar(int IntId_tiquete, int intAerolinea, int intReservado, int intItinerario, double doubleValor){
 
-			String query = " UPDATE Aerolineas SET Id_aerolinea='"+ IntId_Aerolinea +"', Nombre_aerolinea='"+ strNombre_aerolinea +"'";
+			String query = " UPDATE Aerolineas SET Id_Tiquete='"+ intId_tiquete +"', Aerolinea='"+ intAerolinea +"', Reservado='"+ intReservado +"', Itinerario='"+ intItinerario +"', Valor='"+ doubleValor +"'";
 
 			conex.queryUpdate(query);
 		}

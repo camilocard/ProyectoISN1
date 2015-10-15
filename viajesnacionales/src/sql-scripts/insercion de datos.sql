@@ -148,7 +148,7 @@ insert into Aerolineas(Nombre_aerolinea)
 
 
 
-insert into Cliente(Nombre1, Nombre2, Apellido1, Apellido2, Fecha_nacimiento, Sexo, Documento, TipoDoc)
+insert into clientes(Nombre1, Nombre2, Apellido1, Apellido2, Fecha_nacimiento, Sexo, Documento, TipoDoc)
 	values
 ('KELLY', 'URIEL', 'Abenhuly', 'Ximenes', '23/8/1923', '0', '7882394545', 'C.C.'),
 ('MARTA', 'JESUS', 'Abicatsar', 'Abendana', '23/3/1922', '1', '4172485565', 'C.C.'),
@@ -172,7 +172,7 @@ insert into Cliente(Nombre1, Nombre2, Apellido1, Apellido2, Fecha_nacimiento, Se
 ('LEISY', 'LINDA', 'Pereira', 'Abendano', '11/7/1962', '0', '4283753450', 'C.E.'),
 ('SOBEIDA', 'FERNANDO', 'Abentalco', 'Abengallel', '5/3/1975', '0', '9643866569', 'C.E.'),
 ('PAOLA', 'YENNY', 'Abenhacan', 'Abenpacuriel', '18/4/1907', '1', '2831515646', 'T.I.'),
-('JORGE	JULIANA', 'Aben Nahmias', 'Abennubti', '28/1/1946', '1', '3798277043', 'T.I.'),
+('JORGE', 'Aben Nahmias', 'Abennubti', '28/1/1946', '1', '3798277043', 'T.I.'),
 ('ANDREAL', 'CLAUDIA', 'Abenharrel', 'Abendavid', '4/10/1937', '1', '752813248', 'C.E.'),
 ('GERSON', 'JENNY', 'Abenpartel', 'Abenfranchil', '9/6/1995', '0', '58071728', 'C.C.'),
 ('TANIA', 'CLAUDIA', 'Abenhacar', 'Abenpartel', '23/12/1961', '1', '3958035692', 'T.I.'),
@@ -192,7 +192,7 @@ insert into Cliente(Nombre1, Nombre2, Apellido1, Apellido2, Fecha_nacimiento, Se
 ('SONIA', 'ALEJANDRO', 'Abenlahazar', 'Abi', '13/10/1927', '0', '2522379605', 'C.E.'),
 ('MARTIN', 'NERYS', 'Abenyahion', 'Brandao', '27/6/1992', '1', '1318304110', 'C.C.'),
 ('CESAR', 'XIMENA', 'Abenhum', 'Abensanto', '21/1/1969', '0', '7979032715', 'C.C.'),
-('PAULA	DEYSE', 'Abengaby', 'Aben', 'Nahmias', '21/2/1958', '1', '3289371474', 'C.E.'),
+('PAULA', 'Abengaby', 'Aben', 'Nahmias', '21/2/1958', '1', '3289371474', 'C.E.'),
 ('RUTH', 'XIOMARA', 'Abentaurei', 'Abengaby', '1/3/1964', '1', '3254911835', 'T.I.'),
 ('SIBONEY', 'FABIO', 'Abenharrel', 'Abenyaxi', '26/5/1927', '1', '9784196932', 'C.E.'),
 ('JAVIER', 'ANDRES', 'Abiatar', 'Abensarcan', '6/1/1980', '1', '6616056067', 'C.E.'),
@@ -251,5 +251,4 @@ insert into Cliente(Nombre1, Nombre2, Apellido1, Apellido2, Fecha_nacimiento, Se
 ('MARIAM', 'EVELIN', 'Abiatar', 'Abendana', '18/10/1979', '0', '2963605290', 'T.I.'),
 ('OSWALDO', 'HUGO', 'Abendanha', 'Abenmayor', '19/1/1949', '0', '5478288597', 'C.E.');
 
-
-insert into 
+ 
