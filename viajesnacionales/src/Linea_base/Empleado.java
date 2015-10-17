@@ -1,12 +1,10 @@
 package Linea_base;
 import Conexiones.Conexion;
-import javax.swing.JOptionPane;
-
 
 /**
  * @author Administrador
  * @version 1.0
- * @created 13-oct-2015 12:05:10 PM
+ * @created 17-oct-2015 1:06:33 AM
  */
 public class Empleado {
 
@@ -19,8 +17,9 @@ public class Empleado {
 	private String strFechaNac;
 	private boolean bolSexo;
 	private String strDocumento;
-	private String strTipoDoc;
-	Conexion conex = new Conexion();
+	private int intTipodoc;
+        
+        Conexion conex = new Conexion();
 
 
 
@@ -28,126 +27,145 @@ public class Empleado {
 
 	}
 
-	// <editor-fold desc="Constructores de la clase." defaultstate="collapsed">
-		public void Empleado(){
+// <editor-fold desc="Constructores de la clase." defaultstate="collapsed">
 
-		}
-		/**
-		 * 
-		 * @param intid_empleado
-		 */
-		public void Empleados(int intid_empleado){
+	public void Empleado(){
 
-		}
+	}
 
-		/**
-		 * 
-		 * @param intId_empleado
-		 * @param srtCargo
-		 * @param strNombre1
-		 * @param strNombre2
-		 * @param strApellido1
-		 * @param strApellido2
-		 * @param bolSexo
-		 * @param strFechaNac
-		 * @param strTipoDoc
-		 */
-		public void Empleado(int intId_empleado, String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, boolean bolSexo, String strFechaNac, String strTipoDoc){
+	/**
+	 * 
+	 * @param intId_empleado
+	 */
+	public void Empleado(int intId_empleado){
 
-		}
-	// </editor-fold>
+	}
 
-	// <editor-fold desc="Métodos get de la clase." defaultstate="collapsed">
-		public String getstrCargo(){
-			return strCargo;
-		}
+	/**
+	 * 
+	 * @param intId_empleado
+	 * @param srtCargo
+	 * @param strNombre1
+	 * @param strNombre2
+	 * @param strApellido1
+	 * @param strApellido2
+	 * @param strFechaNac
+	 * @param bolSexo
+	 * @param strDocumento
+	 * @param intTipodoc
+	 */
+	public void Empleado(int intId_empleado, String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, String strFechaNac, boolean bolSexo, String strDocumento, int intTipodoc){
 
-		public int getintId_empleado(){
-			return intId_empleado;
-		}
+	}
+// </editor-fold>
 
-		public String getstrNombre1(){
-			return strNombre1;
-		}
+// <editor-fold desc="Métodos get de la clase." defaultstate="collapsed">      
 
-		public String getstrNombre2(){
-			return strNombre2;
-		}
+	public int getintId_empleado(){
+		return intId_empleado;
+	}
 
-		public String getstrApellido1(){
-			return strApellido1;
-		}
-	// </editor-fold>
+	public String getstrCargo(){
+		return strCargo;
+	}
 
-	// <editor-fold desc="Métodos set de la clase." defaultstate="collapsed">
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setstrCargo(String newVal){
-			strCargo = newVal;
-		}
+	public String getstrNombre1(){
+		return strNombre1;
+	}
 
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setintId_empleado(int newVal){
-			intId_empleado = newVal;
-		}
+	public String getstrNombre2(){
+		return strNombre2;
+	}
 
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setstrNombre1(String newVal){
-			strNombre1 = newVal;
-		}
+	public String getstrApellido1(){
+		return strApellido1;
+	}
 
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setstrNombre2(String newVal){
-			strNombre2 = newVal;
-		}
+	public String getstrApellido2(){
+		return strApellido2;
+	}
 
-		public String getstrApellido2(){
-			return strApellido2;
-		}
+	public String getstrFechaNac(){
+		return strFechaNac;
+	}
 
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setstrApellido1(String newVal){
-			strApellido1 = newVal;
-		}
-
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setstrApellido2(String newVal){
-			strApellido2 = newVal;
-		}
-
-		public boolean isbolSexo(){
-			return bolSexo;
-		}
-
-		/**
-		 * 
-		 * @param newVal
-		 */
-		public void setbolSexo(boolean newVal){
-			bolSexo = newVal;
-		}
-
-	// </editor-fold>
+	public boolean isbolSexo(){
+		return bolSexo;
+	}
 
 	public String getstrDocumento(){
 		return strDocumento;
+	}
+// </editor-fold>
+
+// <editor-fold desc="Métodos set de la clase." defaultstate="collapsed">
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setintId_empleado(int newVal){
+		intId_empleado = newVal;
+	}
+
+	public int getintTipodoc(){
+		return intTipodoc;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setstrCargo(String newVal){
+		strCargo = newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setstrNombre1(String newVal){
+		strNombre1 = newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setstrNombre2(String newVal){
+		strNombre2 = newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setstrApellido1(String newVal){
+		strApellido1 = newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setstrApellido2(String newVal){
+		strApellido2 = newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setstrFechaNac(String newVal){
+		strFechaNac = newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setbolSexo(boolean newVal){
+		bolSexo = newVal;
 	}
 
 	/**
@@ -158,88 +176,75 @@ public class Empleado {
 		strDocumento = newVal;
 	}
 
-	public String getstrTipoDoc(){
-		return strTipoDoc;
-	}
-
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setstrTipoDoc(String newVal){
-		strTipoDoc = newVal;
+	public void setintTipodoc(int newVal){
+		intTipodoc = newVal;
+	}
+// </editor-fold>
+
+// <editor-fold desc="Métodos CRUD de la clase." defaultstate="collapsed">
+
+	/**
+	 * 
+	 * @param intId_empleado
+	 */
+	public void CrudConsultar(int intId_empleado){
+
+		String[][]res = conex.resultadoQuery(conex.queryConsulta("SELECT * FROM Empleados WHERE Id_empleado= '" + intId_empleado + "';"));
+
+		System.out.println("El registro es: " + res[0][0] + "-" + res[0][1]+ "-" + res[0][2] + "-" + res[0][3]+ "-" + res[0][4] + "-" + res[0][5] + "-" + res[0][6] + "-" + res[0][7] + "-" + res[0][8] + "-" + res[0][9]);
 	}
 
-	// <editor-fold desc="Métodos CRUD de la clase." defaultstate="collapsed">
-		/**
-		 * 
-		 * @param intId_empleado
-		 */
-		public void CrudConsultar(int intId_empleado){
-			String[][]res = conex.resultadoQuery(conex.queryConsulta("SELECT * FROM Empleados WHERE Id_empleado= '" + intId_empleado + "';"));
+	/**
+	 * 
+	 * @param srtCargo
+	 * @param strNombre1
+	 * @param strNombre2
+	 * @param strApellido1
+	 * @param strApellido2
+	 * @param strFechaNac
+	 * @param bolSexo
+	 * @param strDocumento
+	 * @param intTipodoc
+	 */
+	public void CrudInsertar(String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, String strFechaNac, boolean bolSexo, String strDocumento, int intTipodoc){
 
-			System.out.println("El registro es: " + res[0][0] + "-" + res[0][1]+ "-" + res[0][2] + "-" + res[0][3]+ "-" + res[0][4] + "-" + res[0][5] + "-" + res[0][6] + "-" + res[0][7] + "-" + res[0][8] + "-" + res[0][9]);
+		String query = " insert into Empleados (Cargo, Nombre1, Nombre2, Apellido1, "
+		+ "Apellido2, FechaNac, Sexo, Documento, TipoDoc)"
+		+ " values "+"('"+strCargo+"','"+strNombre1+"','"+strNombre2+"','"+strApellido1+"','"+strApellido2+"','"+strFechaNac+"','"+bolSexo+"','"+strDocumento+"','"+intTipodoc+"')";
 
-		}
+		conex.queryUpdate(query);
+	}
 
-		/**
-		 * 
-		 * @param srtCargo
-		 * @param strNombre1
-		 * @param strNombre2
-		 * @param strApellido1
-		 * @param strApellido2
-		 * @param strFechaNac
-		 * @param bolSexo
-		 * @param strDocumento
-		 * @param strTipoDoc
-		 */
-		public void CrudInsertar(String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, String strFechaNac, boolean bolSexo, String strDocumento, String strTipoDoc){
-			
-			String query = " insert into Empleados (Cargo, Nombre1, Nombre2, Apellido1, "
-			+ "Apellido2, FechaNac, Sexo, Documento, TipoDoc)"
-			+ " values "+"('"+strCargo+"','"+strNombre1+"','"+strNombre2+"','"+strApellido1+"','"+strApellido2+"','"+strFechaNac+"','"+bolSexo+"','"+strDocumento+"','"+strTipoDoc+"')";
+	/**
+	 * 
+	 * @param intId_empleado
+	 * @param srtCargo
+	 * @param strNombre1
+	 * @param strNombre2
+	 * @param strApellido1
+	 * @param strApellido2
+	 * @param bolSexo
+	 * @param strFechaNac
+	 * @param strDocumento
+	 * @param intTipoDoc
+	 */
+	public void CrudActualizar(int intId_empleado, String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, boolean bolSexo, String strFechaNac, String strDocumento, int intTipoDoc){
 
-	        conex.queryUpdate(query);
-		}
+		String query = " UPDATE Empleados SET Id_empleado='"+ intId_empleado +"', Cargo='"+ strCargo +"', Nombre1='"+ strNombre1 +"', Nombre2='"+ strNombre2 +"', Apellido1='"+ strApellido1 +"',Apellido2='"+ strApellido2 +"', FechaNac='"+ strFechaNac +"', Sexo='"+ bolSexo +"', Documento='"+ strDocumento +"', TipoDoc='"+ intTipoDoc +"'";
 
-		/**
-		 * 
-		 * @param intId_empleado
-		 * @param srtCargo
-		 * @param strNombre1
-		 * @param strNombre2
-		 * @param strApellido1
-		 * @param strApellido2
-		 * @param bolSexo
-		 * @param strFechaNac
-		 * @param strDocumento
-		 * @param strTipoDoc
-		 */
-		public void CrudActualizar(int intId_empleado, String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, boolean bolSexo, String strFechaNac, String strDocumento, String strTipoDoc){
+		conex.queryUpdate(query);
+	}
+	//TODO:
+	public void CrudListar(){
 
-			String query = " UPDATE Empleados SET Id_empleado='"+ intId_empleado +"', Cargo='"+ strCargo +"', Nombre1='"+ strNombre1 +"', Nombre2='"+ strNombre2 +"', Apellido1='"+ strApellido1 +"',Apellido2='"+ strApellido2 +"', FechaNac='"+ strFechaNac +"', Sexo='"+ bolSexo +"', Documento='"+ strDocumento +"', TipoDoc='"+ strTipoDoc +"'";
-
-			conex.queryUpdate(query);
-
-		}
-
-		/**
-		 * 
-		 * @param intId_empleado
-		 * @param srtCargo
-		 * @param strNombre1
-		 * @param strNombre2
-		 * @param strApellido1
-		 * @param strApellido2
-		 * @param bolSexo
-		 * @param strFechaNac
-		 * @param strDocumento
-		 * @param strTipoDoc
-		 */
-		public void CrudListar(int intId_empleado, String srtCargo, String strNombre1, String strNombre2, String strApellido1, String strApellido2, boolean bolSexo, String strFechaNac, String strDocumento, String strTipoDoc){
-
-		}
-	// </editor-fold>
-
+	}
+// </editor-fold>
 }
+
+
+
+

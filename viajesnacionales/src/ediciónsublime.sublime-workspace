@@ -1,0 +1,629 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Tipo",
+				"TipoDoc"
+			],
+			[
+				"Ape",
+				"Apellido2"
+			],
+			[
+				"Nombre",
+				"Nombre2"
+			],
+			[
+				"em",
+				"Empleado"
+			],
+			[
+				"aero",
+				"Aerolinea"
+			],
+			[
+				"fecha",
+				"fecha_regreso"
+			],
+			[
+				"clie",
+				"Cliente_que_reserva"
+			],
+			[
+				"in",
+				"intid_reserva"
+			],
+			[
+				"ID",
+				"Id_reserva"
+			],
+			[
+				"re",
+				"Reserva"
+			],
+			[
+				"int",
+				"intEmpledo"
+			],
+			[
+				"str",
+				"strFecha_regreso"
+			],
+			[
+				"strfe",
+				"strFecha_salida"
+			],
+			[
+				"fe",
+				"srtFecha_salida"
+			],
+			[
+				"plan",
+				"intPlan_escogido"
+			],
+			[
+				"doubl",
+				"doubleValor"
+			],
+			[
+				"inti",
+				"intItinerario"
+			],
+			[
+				"Aer",
+				"Aerolinea"
+			],
+			[
+				"dou",
+				"doubleValor"
+			],
+			[
+				"intid",
+				"IntId_Aerolinea"
+			],
+			[
+				"strd",
+				"strDireccion"
+			],
+			[
+				"No",
+				"Nombre2"
+			],
+			[
+				"Nom",
+				"Nombre1"
+			],
+			[
+				"stra",
+				"strApellido1"
+			],
+			[
+				"strnom",
+				"strNombre2"
+			],
+			[
+				"cone",
+				"conex"
+			],
+			[
+				"Em",
+				"Empleados"
+			],
+			[
+				"n",
+				"Nombre_aerolinea"
+			],
+			[
+				"a",
+				"Aerolineas"
+			],
+			[
+				"cliente",
+				"Cliente"
+			],
+			[
+				"CRUD",
+				"CRUDMostrar"
+			],
+			[
+				"pri",
+				"println"
+			],
+			[
+				"col",
+				"colaux"
+			],
+			[
+				"lis",
+				"ListaColores"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"qu",
+				"QueryConsulta"
+			],
+			[
+				"m",
+				"main	method (main)"
+			],
+			[
+				"co",
+				"conectar"
+			],
+			[
+				"con",
+				"contador"
+			],
+			[
+				"secu",
+				"secuencia4"
+			],
+			[
+				"se",
+				"secuencia2"
+			],
+			[
+				"pin",
+				"PIN_D1"
+			],
+			[
+				"pin_d",
+				"PIN_D1"
+			],
+			[
+				"out",
+				"output_float"
+			],
+			[
+				"IN",
+				"input_state"
+			],
+			[
+				"PIN",
+				"PIN_D0"
+			],
+			[
+				"f",
+				"footer	Tag"
+			],
+			[
+				"secua",
+				"secuencia1"
+			],
+			[
+				"set",
+				"set_tris_D"
+			],
+			[
+				"li",
+				"limpiarRegistros"
+			],
+			[
+				"SET",
+				"set_tris_B"
+			],
+			[
+				"dela",
+				"delay_ms"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Ejemplos CRUD.java",
+			"settings":
+			{
+				"buffer_size": 2305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Conexiones/Conexion.java",
+			"settings":
+			{
+				"buffer_size": 8297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/*\n * To change this license header, choose License Headers in Project Properties.\n * To change this template file, choose Tools | Templates\n * and open the template in the editor.\n */\npackage viajesnacionales;\nimport Conexiones.Conexion;\nimport Linea_base.*;\nimport java.sql.*;\n\n/**\n *\n * @author Mario\n */\npublic class Principal {\n\n    /**\n     * @param args the command line arguments\n     */\n    public static void main(String[] args) {\n        \n        Conexion conex = new Conexion();\n        \n        \n        \n        \n        \n        String[][]res = conex.resultadoQuery(conex.queryConsulta(\"SELECT * FROM Clientes WHERE Id_Cliente=1;\"));\n        \n        System.out.println(\"El registro es: \" + res[0][0] + \"-\" + res[0][1] + \"-\" + res[0][2]);\n        \n        // TODO code application logic here\n        \n        Aerolineas a = new Aerolineas();\n        \n       a.CrudConsultar(1);\n       a.CrudInsertar(null);\n\n       \n    }\n    \n}\n",
+			"file": "viajesnacionales/Principal.java",
+			"file_size": 975,
+			"file_write_time": 130892786923363355,
+			"settings":
+			{
+				"buffer_size": 944,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sql-scripts/insercion de datos.sql",
+			"settings":
+			{
+				"buffer_size": 94944,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sql-scripts/Diagrama de datos-postgresql.SQL",
+			"settings":
+			{
+				"buffer_size": 5669,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Empleado.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Planes.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Reserva.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/sql-scripts/insercion de datos.sql",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Aerolineas.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Tiquete.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/.gitignore",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Cliente.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Contacto.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Linea_base/Itinerario.java",
+		"/C/Users/Mario/Desktop/Cliente.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/sql-scripts/Diagrama de datos-postgresql.SQL",
+		"/C/Users/Mario/Desktop/Ciudades con aeropuertos.csv",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Ejemplos CRUD.java",
+		"/E/Mario-Roberto/Universidad/Materias/Ingeniería-de-software1/Proyecto/scriptvia.SQL",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/sql-scripts/Diagrama de datos-mysql.SQL",
+		"/C/Users/Mario/Documents/NetBeansProjects/Prueb/src/pruebaconexion/Pruebaconexion.java",
+		"/E/Mario-Roberto/Repositorios/Universidad/ProyectoISN1/viajesnacionales/src/Conexiones/Conexion.java",
+		"/E/Mario-Roberto/Universidad/Materias/Ingeniería-de-software1/Proyecto/9octubre/Agencia de Viajes.backup",
+		"/E/Mario-Roberto/Repositorios/Universidad/Proyectos-TC/PIC18F4550/teclado-lcd/Principal.c",
+		"/E/Mario-Roberto/Universidad/Materias/Teoria de control/microchips/proyectospic/pic18f4550/ccs/tecladoLcdZumbador/Teclado (1).c",
+		"/E/Mario-Roberto/Universidad/Materias/Teoria de control/microchips/proyectospic/pic18f4550/ccs/LCD/Teclado.c",
+		"/C/Users/Mario/Documents/repositorios/Proyectos-TC/PIC18F4550/Luces_led/led.c",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Teoria_de_control/prueba.c~",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Teoria_de_control/buton c.txt",
+		"/E/Mario-Roberto/Repositorios/Universidad/Proyectos-TC/PIC18F4550/Luces_led/led.c",
+		"/E/Mario-Roberto/Repositorios/Universidad/Proyectos-TC/PIC18F4550/teclado-lcd/librerias/LCD4x20_3PIN.c",
+		"/E/Mario-Roberto/Repositorios/Universidad/Proyectos-TC/PIC18F4550/teclado-lcd/librerias/ds1307.c",
+		"/E/Mario-Roberto/Repositorios/Universidad/Proyectos-TC/PIC18F4550/teclado-lcd/librerias/KBD18F.c",
+		"/E/Mario-Roberto/Repositorios/Universidad/Proyectos-TC/PIC16F648A/vs_clave.c",
+		"/E/Mario-Roberto/Universidad/Materias/Teoria de control/microchips/proyectospic/pic18f4550/main.c",
+		"/E/Mario-Roberto/Universidad/Materias/Teoria de control/microchips/proyectospic/pic18f4550/ccs/LCD/LCD1.c",
+		"/E/Mario-Roberto/repositorios/Universidad/Proyectos-TC/PIC18F4550/teclado-lcd/librerias/LCD4x20_3PIN.c",
+		"/E/Mario-Roberto/repositorios/Universidad/Proyectos-TC/PIC18F4550/Luces_led/led.c",
+		"/E/Mario-Roberto/repositorios/Universidad/Proyectos-TC/PIC16F648A/vs_clave.c",
+		"/C/Users/Mario/Documents/repositorios/Proyectos-TC/PIC16F648A/vs_clave.c",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Teoria_de_control/prueba.c",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Teoria_de_control/proyectos/led.c",
+		"/C/Users/Mario/Downloads/keme-0.94.tar/YC3qgc/keme-0.94/Doxyfile",
+		"/C/Users/Mario/Downloads/keme-0.94.tar/YC3qgc/keme-0.94/main.cpp",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Reglas de negocio",
+		"/C/Users/Mario/Documents/MEGA/Universidad/Enlaces_para_revisar.txt",
+		"/C/Users/Mario/Desktop/prueba.html",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/EjerConexión/EjerConexión/BaseDatos/Conectar.java",
+		"/C/Users/Mario/Documents/MEGA/Universidad/Empresa/links impresora laser",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Proyecto/camilo.xmi",
+		"/C/Users/Mario/Documents/repositorios/ProyectoTC/PIC18F4550/Luces_led/led.c",
+		"/C/dolibarr/www/index.php",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/links BDs online.txt~",
+		"/C/Users/Mario/Downloads/keme-0.94.tar/YC3qgc/keme-0.94/cargaespera.ui.h",
+		"/C/Users/Mario/Documents/repositorios/ProyectoTC/PIC16F877A/Secuencias_led/main.c",
+		"/C/Users/Mario/Documents/repositorios/ProyectoTC/.git/config",
+		"/C/dolibarr/rundoliwamp.bat",
+		"/C/Program Files/doxygen/examples/afterdoc.h",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Entrega 2 proyecto/Agencia de viajes.eap",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Entrega 2 proyecto/Requisitos 1/agencia de viajes.EAP",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Entrega 2 proyecto/Requisitos 1/VIAJES NACIONALES S.A",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Requisitos/Requisitos/Viajes nac.EAP",
+		"/F/SysConfig.dat",
+		"/F/AutoRun.exe",
+		"/C/Users/Mario/Documents/exampleapp.EAP",
+		"/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Requisitos/Requisitos/VIAJES NACIONALES S.A",
+		"/C/Users/Mario/Documents/repositorios/ProyectoTC/Luces_led/led.c"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Persona",
+			"conMiConexion",
+			"ListaL",
+			"Colores",
+			"cc",
+			" ",
+			"(",
+			"(O",
+			"(de",
+			"(L",
+			" ",
+			"(I",
+			"(O)",
+			"(I)",
+			"(L)",
+			"(T)",
+			" M ",
+			" F ",
+			" F",
+			",",
+			",DE",
+			".",
+			" ",
+			"{\n",
+			"get",
+			"pueto",
+			"pulsador",
+			"50",
+			"200",
+			"500",
+			"1000"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Mario/Documents/MEGA/Universidad/desde linux/universidad/2015/II/Ingenieria_de_software/Ejemplos CRUD.java",
+					"settings":
+					{
+						"buffer_size": 2305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2305,
+								2305
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 606.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Conexiones/Conexion.java",
+					"settings":
+					{
+						"buffer_size": 8297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1573,
+								1573
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "viajesnacionales/Principal.java",
+					"settings":
+					{
+						"buffer_size": 944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								930,
+								930
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sql-scripts/insercion de datos.sql",
+					"settings":
+					{
+						"buffer_size": 94944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13532,
+								13532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "sql-scripts/Diagrama de datos-postgresql.SQL",
+					"settings":
+					{
+						"buffer_size": 5669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1493,
+								1493
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1242.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
